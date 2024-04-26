@@ -1,0 +1,45 @@
+Account:
+   Personal Info:Post route  to update - User Name
+                                       - Email
+                                       - Phonenumber
+                                       - Address
+   Your Post : Post route to do the  Edit of one othe Postes (To be done when lisitng is done)
+               Get route to Delete the post
+               Get route to Repost the post
+   Payments and Payouts : - Get Request for Pending payments
+                          - Get Request for Successful payments 
+                          - Get Request for Unscessful payments 
+   Login and security :   - Post request Update password or set a new one
+                          - Get connect socail accounts 
+                          - Get Delete  account 
+    Refferal account :    - Get request to create refferal program accountu
+                          - Get request for referral accounts information
+                          - Post request for uploading proof
+                          - Get  request for request withdrawing estimated incomes 
+                          - Get  request for todays activity
+filter :
+    Get filters of homes :- no filters
+                          - num partions
+                          - Distirct
+                          - Sector
+                          - Furnishe
+                          - Your location
+                          - rents/sells
+                          - Building types
+ 
+                          Sign-up  :
+                              create an new account
+                              verify your account
+                              google create account
+                          sign-in : 
+                               google sign-in
+                               verify your account
+                               sign-in usual
+
+Adminastration            - admin authentication
+                          - admin dashboards
+                          - admin levels levels
+                 
+
+
+

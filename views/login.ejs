@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.loop{
+  margin: 1.5%;
+  width: 30%;
+}
+@media screen and (max-width: 600px) {
+.loop{
+  margin: 1.5%;
+  width: 100%;}
+}
+</style>
+</head>
+<body class="w3-light-grey" style="margin: 20% 10% 10% 10%;" >
+<div class="w3-card w3-center w3-padding" style="padding: 50% 0% 50% 0%;"  >
+    <label> Please enter admin's key </label>
+    <br/>
+    <input id='key' class="w3-input" type="password">
+    <br/>
+    <button class="w3-btn w3-blue" onclick="authenticate()">submit</button>
+</div>
+<script>
+  function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/admin";
+}
+  const authenticate=()=>{
+    setCookie('ADMIN_KEY',`${document.getElementById('key').value}`,3)
+    setTimeout(()=>{window.location.href='/admin/authenticated'},2000)
+  }
+</script>
+</body>
+</html>
