@@ -11,7 +11,7 @@ const isAuthenticated=(req,res,next)=>{
  };
 }
 
-
+const internal=process.env.SERVER_INTERNAL_URL_LINK
 app.get('/',(req,res)=>{
  res.render('login');
 })
@@ -25,14 +25,12 @@ app.get('/authenticated',isAuthenticated,(req,res)=>{
 })
 app.get('/Adverts',isAuthenticated,(req,res)=>{
 Adverts.find().then((results)=>{
-   res.render('Adverts',{adverts:results,link:process.env.SERVER_INTERNAL_URL_LINk});
-   console.log(process.env.SERVER_INTERNAL_URL_LINk)
-   
+   res.render('Adverts',{adverts:results,link:internal});
 })
 })
 app.get('/Advertisers',isAuthenticated,(req,res)=>{
   User.find({Account_Activated_For_Growth_Program:true}).then((response)=>{
-   res.render('Advertisers',{activated_Accounts:response,link:process.env.SERVER_INTERNAL_URL_LINk});
+   res.render('Advertisers',{activated_Accounts:response,link:internal});
   })
 })
 app.get('/money',isAuthenticated,(req,res)=>{
@@ -40,8 +38,7 @@ app.get('/money',isAuthenticated,(req,res)=>{
 })
 app.get('/proof',isAuthenticated,(req,res)=>{
  Proof.find().then((results)=>{
-  res.render('Proof',{proofs:results,link:process.env.SERVER_INTERNAL_URL_LINK});
-  console.log(process.env.SERVER_INTERNAL_URL_LINK)
+  res.render('Proof',{proofs:results,link:internal});
  })
 })
 
