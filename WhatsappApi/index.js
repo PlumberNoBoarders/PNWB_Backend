@@ -9,6 +9,10 @@ const client=new Client({
       remotePath:
         "https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.2412.54.html",
     },
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox'
+    ],
     authStrategy: new LocalAuth({
         clientId:'MAIN_CLIENT_ON_SERVER_2'
     })
