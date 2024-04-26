@@ -41,6 +41,7 @@ app.get('/money',isAuthenticated,(req,res)=>{
 app.get('/proof',isAuthenticated,(req,res)=>{
  Proof.find().then((results)=>{
   res.render('proof',{proofs:results,link:process.env.SERVER_INTERNAL_URL_LINK});
+  console.log(process.env.SERVER_INTERNAL_URL_LINK)
  })
 })
 
