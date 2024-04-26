@@ -26,6 +26,7 @@ app.get('/authenticated',isAuthenticated,(req,res)=>{
 app.get('/Adverts',isAuthenticated,(req,res)=>{
 Adverts.find().then((results)=>{
    res.render('Adverts',{adverts:results,link:process.env.SERVER_INTERNAL_URL_LINk});
+   console.log(process.env.SERVER_INTERNAL_URL_LINk)
    
 })
 })
