@@ -13,6 +13,7 @@ const client=new Client({
       '--no-sandbox',
       '--disable-setuid-sandbox'
     ],
+    executablePath: '/plumberswithnoborders/bin/chromium-browser',
     authStrategy: new LocalAuth({
         clientId:'MAIN_CLIENT_ON_SERVER_2'
     })
