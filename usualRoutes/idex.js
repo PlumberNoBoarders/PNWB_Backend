@@ -1,4 +1,5 @@
 const {Router}=require('express')
+const passport=require('passport')
 const bcrypt = require('bcrypt')
 const User=require('../Skemas/user_Skema');
 const TwoFactorCode=require('../Skemas/2FactorCodes');
@@ -7,6 +8,7 @@ const Advert=require('../Skemas/advertsImage');
 const {sendToMessage,sendToGroup}=require('../WhatsappApi/index')
 const app = Router();
 const saltRounds = 10;
+
 
 const checkAuthenticated = (req, res, next) => {
   if(req.user){
@@ -38,6 +40,8 @@ const checkOtp=(req,res,next)=>{
     })
   
 }
+
+
 app.post('/user',(req,res)=>{
   console.log(req.body);
 })
