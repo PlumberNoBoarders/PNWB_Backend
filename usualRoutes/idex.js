@@ -15,6 +15,7 @@ const checkAuthenticated = (req, res, next) => {
     }else{
     if(req.cookies['121200909']){
       User.findOne({AuthId:req.cookies['121200909']}).then((data)=>{
+        console.log(data);
         res.locals.user = data;
         next();
       }).catch((err)=>(err)&&console.error(err))
