@@ -71,10 +71,30 @@ const createAfile= async ()=>{
   for (const key in req.body) {
     if (Object.hasOwnProperty.call(req.body, key)) {
       const element = req.body[key];
-        if (key == "Video") {
-          if (element.includes("data:application/octet-stream;base64,")) {
+        if (key == "Pic") {
+          if (file.includes("data:image/png;base64,")) {
             fileSysteem.writeFile(
-              `./public/${req.body.userName}/${key}.mp4`,
+              `./public/${req.body.userName}/${key}.avif`,
+              element.replace("data:application/octet-stream;base64,", ""),
+              "base64",
+              function (err) {
+                if (err) console.log(err);
+              }
+            );
+          }
+          if (file.includes("data:image/jpg;base64,")) {
+            fileSysteem.writeFile(
+              `./public/${req.body.userName}/${key}.avif`,
+              element.replace("data:application/octet-stream;base64,", ""),
+              "base64",
+              function (err) {
+                if (err) console.log(err);
+              }
+            );
+          }
+          if (file.includes("data:image/jpeg;base64,")) {
+            fileSysteem.writeFile(
+              `./public/${req.body.userName}/${key}.avif`,
               element.replace("data:application/octet-stream;base64,", ""),
               "base64",
               function (err) {

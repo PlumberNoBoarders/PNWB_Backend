@@ -70,7 +70,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
 <script>
 const approveP=(userName)=>{
-fetch(`http://<%=link%>/approveUser`, {
+fetch(`https://<%=link%>/approveUser`, {
  method: "POST",
  mode: "cors",
  cache: "no-cache",
@@ -91,7 +91,7 @@ fetch(`http://<%=link%>/approveUser`, {
 }
 const deleteAdvert=(url)=>{
   
-  fetch(`http://<%=link%>/deleteAdvert`, {
+  fetch(`https://<%=link%>/deleteAdvert`, {
    method: "POST",
    mode: "cors",
    cache: "no-cache",

@@ -67,7 +67,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
          
          <div id="fromServerVideo" class="w3-left"> 
            <div style="overflow:hidden;">
-            <center><video style="width: 50%;aspect-ratio: 1/1.5;" src="../public/<%=element.AdvertiserName%>/Video.mp4" controls></video></center>           </div>
+            <center><img style="width: 50%;aspect-ratio: 1/1.5;object-fit: cover;" src="../public/<%=element.AdvertiserName%>/Video.mp4" ></video></center>           </div>
          </div>
          <div class="w3-clear"></div>
          <div style="display: flex;flex-direction: row;flex-wrap: wrap;width: 100%; justify-content: space-between;" >
@@ -91,7 +91,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
 <script>
   let approve=(id)=>{
-            fetch(`http://<%=link%>/approve`, {
+            fetch(`https://<%=link%>/approve`, {
              method: "POST",
              mode: "cors",
              cache: "no-cache",

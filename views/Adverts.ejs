@@ -62,7 +62,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <% for (let index = 0; index < adverts.length; index++) {
         const element = adverts[index];%>
         <div class="w3-card" style="width: 30%">
-        <img src='http://<%=link+element['advertUrl']%>' class="w3-margin-bottom" class='w3-round w3-image' style="width: 100%;heigth:100%" alt="">
+        <img src='https://<%=link+element['advertUrl']%>' class="w3-margin-bottom" class='w3-round w3-image' style="width: 100%;heigth:100%" alt="">
         <button onclick="deleteAdvert(`<%=element['advertUrl']%>`)" class="w3-button w3-red w3-round w3-margin">Delete</button>
       </div>
        <%}%> 
@@ -73,7 +73,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <script>
 const deleteAdvert=(url)=>{
   
-  fetch(`http://<%=link%>/deleteAdvert`, {
+  fetch(`https://<%=link%>/deleteAdvert`, {
    method: "POST",
    mode: "cors",
    cache: "no-cache",
@@ -93,7 +93,7 @@ const deleteAdvert=(url)=>{
 }
 const  uploadAdvert=(imgData)=>{
   const d = new Date();
-            fetch(`http://<%=link%>/uploadAdvert`, {
+            fetch(`https://<%=link%>/uploadAdvert`, {
              method: "POST",
              mode: "cors",
              cache: "no-cache",
