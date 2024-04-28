@@ -9,13 +9,12 @@ const app = Router();
 const saltRounds = 10;
 
 const checkAuthenticated = (req, res, next) => {
-  console.log(req.cookies);
   if(req.user){
     res.locals.user = req.user;
     next();
     }else{
-    if(req.cookies['121200909']){
-      User.findOne({AuthId:req.cookies['121200909']}).then((data)=>{
+    if(req.body.a121200909!==''){
+      User.findOne({AuthId:req.body.a121200909}).then((data)=>{
         res.locals.user = data;
         next();
       }).catch((err)=>(err)&&console.error(err))
@@ -39,7 +38,7 @@ const checkOtp=(req,res,next)=>{
     })
   
 }
-app.get('/user',checkAuthenticated,(req,res)=>{
+app.post('/user',checkAuthenticated,(req,res)=>{
    res.json(res.locals.user);
 })
 app.post('/login',(req,res)=>{

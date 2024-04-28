@@ -1,0 +1,8 @@
+[0428/193457.702:WARNING:dns_config_service_win.cc(509)] Failed to read DnsConfig.
+[0428/193457.788:WARNING:dns_config_service_win.cc(509)] Failed to read DnsConfig.
+[0428/193457.813:WARNING:dns_config_service_win.cc(509)] Failed to read DnsConfig.
+[0428/193502.826:WARNING:dns_config_service_win.cc(509)] Failed to read DnsConfig.
+[0428/193512.856:WARNING:dns_config_service_win.cc(509)] Failed to read DnsConfig.
+[0428/193532.879:WARNING:dns_config_service_win.cc(509)] Failed to read DnsConfig.
+[0428/193841.860:INFO:CONSOLE(265)] "Failed to parse video contentType: video/mp4; codecs=avc1.42000a", source: https://web.whatsapp.com/app.2c7f8dd150ae88037cde.js (265)
+[0428/193841.860:INFO:CONSOLE(265)] "Failed to parse video contentType: video/mp4; codecs=hev1.1.6.L93.B0", source: https://web.whatsapp.com/app.2c7f8dd150ae88037cde.js (265)
