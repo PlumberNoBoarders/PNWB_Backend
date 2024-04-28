@@ -38,7 +38,7 @@ const checkOtp=(req,res,next)=>{
     })
   
 }
-app.post('/user',checkAuthenticated,(req,res)=>{
+app.post('/user',(req,res)=>{
   console.log(req.body);
 })
 app.post('/login',(req,res)=>{
