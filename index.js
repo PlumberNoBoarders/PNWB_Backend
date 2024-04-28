@@ -31,7 +31,7 @@ app.set('view engine','ejs');
 app.use('/public', Express.static(path.join(__dirname, 'public')))
 app.use(Express.json({limit: '200mb'}));
 app.use(Express.urlencoded({limit: '200mb', extended: true,}));
-app.use(cors({origin:true,credentials: true}))
+app.use(cors({origin:['https://plumbernoboarders.github.io/plumbum'],credentials: true}))
 app.use(session({
   secret: 'keyboardcat',
   resave: false, // don't save session if unmodified
