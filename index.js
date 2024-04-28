@@ -10,9 +10,8 @@ const dotenv =require('dotenv');
 var cors = require('cors')
 const {innitialize}=require('./WhatsappApi/index')
 dotenv.config();
-innitialize();
+//innitialize();
 
-// other Imports
 const GoogleAuthenticationRoutes =require("./AuthenticateRouter/GoogleAuthentication")
 const otherRoutes =require("./usualRoutes/idex")
 const AdminDashboardRoutes =require("./usualRoutes/AdminRoutes")
@@ -31,7 +30,7 @@ app.set('view engine','ejs');
 app.use('/public', Express.static(path.join(__dirname, 'public')))
 app.use(Express.json({limit: '200mb'}));
 app.use(Express.urlencoded({limit: '200mb', extended: true,}));
-app.use(cors({origin:['https://plumbernoboarders.github.io','197.157.145.191','192.30.252.153','192.30.252.154'],credentials: true}))
+app.use(cors({origin:true,credentials: true}))
 app.use(session({
   secret: 'keyboardcat',
   resave: false, // don't save session if unmodified

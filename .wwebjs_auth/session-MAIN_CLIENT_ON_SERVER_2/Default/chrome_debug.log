@@ -1,8 +1,24 @@
-[0428/193457.702:WARNING:dns_config_service_win.cc(509)] Failed to read DnsConfig.
-[0428/193457.788:WARNING:dns_config_service_win.cc(509)] Failed to read DnsConfig.
-[0428/193457.813:WARNING:dns_config_service_win.cc(509)] Failed to read DnsConfig.
-[0428/193502.826:WARNING:dns_config_service_win.cc(509)] Failed to read DnsConfig.
-[0428/193512.856:WARNING:dns_config_service_win.cc(509)] Failed to read DnsConfig.
-[0428/193532.879:WARNING:dns_config_service_win.cc(509)] Failed to read DnsConfig.
-[0428/193841.860:INFO:CONSOLE(265)] "Failed to parse video contentType: video/mp4; codecs=avc1.42000a", source: https://web.whatsapp.com/app.2c7f8dd150ae88037cde.js (265)
-[0428/193841.860:INFO:CONSOLE(265)] "Failed to parse video contentType: video/mp4; codecs=hev1.1.6.L93.B0", source: https://web.whatsapp.com/app.2c7f8dd150ae88037cde.js (265)
+[0428/232513.508:INFO:CONSOLE(216)] "Another connection wants to delete database 'wawc_db_enc'. Closing db now to resume the delete request.", source: https://web.whatsapp.com/app.2c7f8dd150ae88037cde.js (216)
+[0428/232513.509:INFO:CONSOLE(215)] "Another connection wants to delete database 'wawc_db_enc'. Closing db now to resume the delete request.", source: https://web.whatsapp.com/WAWebWorker.5e22d5986b70580d0557.worker.js (215)
+[0428/232516.867:WARNING:spdy_session.cc(3488)] Received WINDOW_UPDATE for invalid stream 9
+[0428/232516.867:WARNING:spdy_session.cc(3488)] Received WINDOW_UPDATE for invalid stream 11
+[0428/232516.948:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Feature xr-spatial-tracking's parameters are ignored.", source:  (0)
+[0428/232516.948:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'attribution-reporting'.", source:  (0)
+[0428/232516.948:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[0428/232516.948:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'ch-save-data'.", source:  (0)
+[0428/232516.949:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'ch-viewport-height'.", source:  (0)
+[0428/232516.949:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'gamepad'.", source:  (0)
+[0428/232516.949:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'local-fonts'.", source:  (0)
+[0428/232516.949:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'window-management'.", source:  (0)
+[0428/232518.669:WARNING:backend_impl.cc(1826)] Destroying invalid entry.
+[0428/232518.670:WARNING:backend_impl.cc(1826)] Destroying invalid entry.
+[0428/232519.134:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Feature xr-spatial-tracking's parameters are ignored.", source:  (0)
+[0428/232519.134:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'attribution-reporting'.", source:  (0)
+[0428/232519.134:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[0428/232519.134:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'ch-save-data'.", source:  (0)
+[0428/232519.134:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'ch-viewport-height'.", source:  (0)
+[0428/232519.134:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'gamepad'.", source:  (0)
+[0428/232519.135:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'local-fonts'.", source:  (0)
+[0428/232519.135:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'window-management'.", source:  (0)
+[0428/232539.270:WARNING:backend_impl.cc(1826)] Destroying invalid entry.
+[0428/232556.209:INFO:CONSOLE(136)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v3/ya/r/e1v6Qu9qiFS.js?_nc_x=Ij3Wp8lg5Kz (136)
