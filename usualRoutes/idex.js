@@ -9,7 +9,7 @@ const app = Router();
 const saltRounds = 10;
 
 const checkAuthenticated = (req, res, next) => {
-  console.log(req.cookies['121200909']);
+  console.log(req.cookies['language'])
   if(req.user){
     res.locals.user = req.user;
     next();
