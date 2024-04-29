@@ -1,3 +1,2 @@
-2024/04/29-14:22:32.727 5a80 Reusing MANIFEST C:\Users\HP\Desktop\PNWB_Backend\.wwebjs_auth\session-MAIN_CLIENT_ON_SERVER_2\Default\File System\Origins/MANIFEST-000001
-2024/04/29-14:22:32.727 5a80 Recovering log #3
-2024/04/29-14:22:32.728 5a80 Reusing old log C:\Users\HP\Desktop\PNWB_Backend\.wwebjs_auth\session-MAIN_CLIENT_ON_SERVER_2\Default\File System\Origins/000003.log 
+2024/04/29-14:42:31.563 3688 Creating DB C:\Users\HP\Desktop\PNWB_Backend\.wwebjs_auth\session-MAIN_CLIENT_ON_SERVER_2\Default\File System\Origins since it was missing.
+2024/04/29-14:42:31.577 3688 Reusing MANIFEST C:\Users\HP\Desktop\PNWB_Backend\.wwebjs_auth\session-MAIN_CLIENT_ON_SERVER_2\Default\File System\Origins/MANIFEST-000001
