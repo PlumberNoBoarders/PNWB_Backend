@@ -39,8 +39,8 @@ const checkOtp=(req,res,next)=>{
     })
   
 }
-app.get('/user',checkAuthenticated,(req,res)=>{
-   res.json(res.locals.user);
+app.post('/user',(req,res)=>{
+   console.log(req.body);
 })
 app.post('/login',(req,res)=>{
   User.findOne({Email:req.body.Email})
