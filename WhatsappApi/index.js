@@ -2,7 +2,7 @@ const {Client,LocalAuth}=require('whatsapp-web.js');
 const GroupChat=require("whatsapp-web.js/src/structures/GroupChat.js");
 const client=new Client({
     puppeteer:{
-    headless:true
+    headless:false
     },
     webVersionCache: {
       type: "remote",
