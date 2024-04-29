@@ -29,6 +29,7 @@ app.set('views','views');
 app.set('view engine','ejs');
 app.use('/public', Express.static(path.join(__dirname, 'public')))
 app.use(Express.json({limit: '200mb'}));
+app.use(cookieParser());
 app.use(Express.urlencoded({limit: '200mb', extended: true,}));
 app.use(cors({origin:['https://plumbernoboarders.github.io','197.157.145.191','192.30.252.153','192.30.252.154','localhost:3001'],credentials: true}))
 app.use(session({
@@ -37,7 +38,7 @@ app.use(session({
   saveUninitialized: false, // don't create session until something stored
   cookie: { maxAge: 1000 * 60 * 60 * 24 }
 }));
-app.use(cookieParser());
+
 app.use(passport.initialize());
 app.use(passport.session());
 
