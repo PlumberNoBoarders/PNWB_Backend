@@ -10,7 +10,7 @@ const dotenv =require('dotenv');
 var cors = require('cors')
 const {innitialize}=require('./WhatsappApi/index')
 dotenv.config();
-//innitialize();
+innitialize();
 
 const GoogleAuthenticationRoutes =require("./AuthenticateRouter/GoogleAuthentication")
 const otherRoutes =require("./usualRoutes/idex")

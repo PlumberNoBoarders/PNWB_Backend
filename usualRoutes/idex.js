@@ -40,7 +40,6 @@ const checkOtp=(req,res,next)=>{
   
 }
 app.post('/user',(req,res)=>{
-   console.log(req.body);
    if(req.body.hello!==''){
     User.findOne({AuthId:req.body.hello}).then((data)=>{
       res.json({user:data});
