@@ -31,7 +31,7 @@ app.use('/public', Express.static(path.join(__dirname, 'public')))
 app.use(Express.json({limit: '200mb'}));
 app.use(cookieParser());
 app.use(Express.urlencoded({limit: '200mb', extended: true,}));
-app.use(cors({origin:['https://plumbernoboarders.github.io','197.157.145.191','192.30.252.153','192.30.252.154','localhost:3001'],credentials: true}))
+app.use(cors({origin:['https://plumberswithnoborders.works','197.157.145.191','192.30.252.153','192.30.252.154','localhost:3001'],credentials: true}))
 app.use(session({
   secret: 'keyboardcat',
   resave: false, // don't save session if unmodified
