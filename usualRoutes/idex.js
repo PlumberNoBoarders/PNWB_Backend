@@ -219,6 +219,11 @@ app.post('/NewCommision',(req,res)=>{
      }
     })
 })
+app.post('/NewCommision_2',(req,res)=>{
+  const MessageToPlumbersWithnoBordersGroup=`Iyi ni komisiyo ikozwe na '${req.body.commissioner_name}' telephone ye ni '${req.body.commissionerPhone}' . \n Izina ry'ushaka Serivisi ni ${req.body.Commission_name}  \n Nimero ye ni ${req.body.Commision_Phone} \n Ubusobanuro bwibyo ashaka ${req.body.Commision_Discription}`;
+  sendToGroup(MessageToPlumbersWithnoBordersGroup);
+    res.json({'Message':'success'})
+})
 app.post('/CommisionsCurrentUser',(req,res)=>{
   Commissions.find({UserId:req.body.id}).then((results)=>{
    res.json({'commisions':results});
